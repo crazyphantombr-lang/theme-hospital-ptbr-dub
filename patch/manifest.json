@@ -1,0 +1,412 @@
+{
+  "base_file": "SOUND-0.DAT",
+  "expected_size": 16634862,
+  "expected_sha256": "ed93e9310fd83a7e71837c50f22c63c05605c118ffd84e74b91c4a928bd8c051",
+  "clips": [
+    {
+      "clip": 265,
+      "offset": 10443984,
+      "slot_size": 66848,
+      "file": "wav/clip_265.wav",
+      "wav_size": 66836,
+      "metadata": "reqd001.wav",
+      "translation": "Doutor, compareça imediatamente ao Eletrocardiograma!"
+    },
+    {
+      "clip": 266,
+      "offset": 10510832,
+      "slot_size": 61728,
+      "file": "wav/clip_266.wav",
+      "wav_size": 61716,
+      "metadata": "reqd002.wav",
+      "translation": "Doutor, compareça à Sala do Scanner!"
+    },
+    {
+      "clip": 267,
+      "offset": 10572560,
+      "slot_size": 68768,
+      "file": "wav/clip_267.wav",
+      "wav_size": 68756,
+      "metadata": "reqd003.wav",
+      "translation": "Doutor, compareça à Psiquiatria!"
+    },
+    {
+      "clip": 268,
+      "offset": 10641328,
+      "slot_size": 53024,
+      "file": "wav/clip_268.wav",
+      "wav_size": 53012,
+      "metadata": "reqd004.wav",
+      "translation": "Enfermeira necessária na Clínica de Fraturas!"
+    },
+    {
+      "clip": 269,
+      "offset": 10694352,
+      "slot_size": 53280,
+      "file": "wav/clip_269.wav",
+      "wav_size": 53268,
+      "metadata": "reqd005.wav",
+      "translation": "Médico necessário na Clínica de Linguarudos!"
+    },
+    {
+      "clip": 270,
+      "offset": 10747632,
+      "slot_size": 54176,
+      "file": "wav/clip_270.wav",
+      "wav_size": 54164,
+      "metadata": "reqd014.wav",
+      "translation": "Médico solicitado no Inflador de Cabeças!"
+    },
+    {
+      "clip": 280,
+      "offset": 11273392,
+      "slot_size": 48576,
+      "file": "wav/clip_280.wav",
+      "wav_size": 48568,
+      "metadata": "reqd016.wav",
+      "translation": "Médico necessário na Clínica de Restauração Capilar!"
+    },
+    {
+      "clip": 281,
+      "offset": 11321968,
+      "slot_size": 46736,
+      "file": "wav/clip_281.wav",
+      "wav_size": 46724,
+      "metadata": "reqd017.wav",
+      "translation": "Médico solicitado na Sala de Treinamento!"
+    },
+    {
+      "clip": 282,
+      "offset": 11368704,
+      "slot_size": 52960,
+      "file": "wav/clip_282.wav",
+      "wav_size": 52948,
+      "metadata": "reqd019.wav",
+      "translation": "Médico necessário na Sala de Eletrólise!"
+    },
+    {
+      "clip": 283,
+      "offset": 11421664,
+      "slot_size": 39392,
+      "file": "wav/clip_283.wav",
+      "wav_size": 39388,
+      "metadata": "reqd020.wav",
+      "translation": "Médico necessário no Tanque de Gelatina!"
+    },
+    {
+      "clip": 284,
+      "offset": 11461056,
+      "slot_size": 62752,
+      "file": "wav/clip_284.wav",
+      "wav_size": 62740,
+      "metadata": "reqd021.wav",
+      "translation": "Médico necessário no Diagnóstico Geral!"
+    },
+    {
+      "clip": 285,
+      "offset": 11523808,
+      "slot_size": 64672,
+      "file": "wav/clip_285.wav",
+      "wav_size": 64660,
+      "metadata": "reqd023.wav",
+      "translation": "Pesquisador necessário no Departamento de Pesquisa!"
+    },
+    {
+      "clip": 286,
+      "offset": 11588480,
+      "slot_size": 66336,
+      "file": "wav/clip_286.wav",
+      "wav_size": 66324,
+      "metadata": "reqd024.wav",
+      "translation": "Médico necessário na Sala de Descontaminação!"
+    },
+    {
+      "clip": 287,
+      "offset": 11654816,
+      "slot_size": 62368,
+      "file": "wav/clip_287.wav",
+      "wav_size": 62358,
+      "metadata": "maint004.wav",
+      "translation": "Zelador chamado para consertar o Cortador de Línguas!"
+    },
+    {
+      "clip": 288,
+      "offset": 11717184,
+      "slot_size": 61680,
+      "file": "wav/clip_288.wav",
+      "wav_size": 61670,
+      "metadata": "maint005.wav",
+      "translation": "Zelador, conserte o aparelho de Raio-X!"
+    },
+    {
+      "clip": 291,
+      "offset": 11896368,
+      "slot_size": 78752,
+      "file": "wav/clip_291.wav",
+      "wav_size": 78742,
+      "metadata": "maint008.wav",
+      "translation": "Zelador: conserte a Máquina de Eletrólise!"
+    },
+    {
+      "clip": 292,
+      "offset": 11975120,
+      "slot_size": 55136,
+      "file": "wav/clip_292.wav",
+      "wav_size": 55126,
+      "metadata": "maint009.wav",
+      "translation": "Manutenção necessária no Tanque de Gelatina!"
+    },
+    {
+      "clip": 293,
+      "offset": 12030256,
+      "slot_size": 60832,
+      "file": "wav/clip_293.wav",
+      "wav_size": 60822,
+      "metadata": "maint010.wav",
+      "translation": "Zelador chamado para Máquina de Cardio!"
+    },
+    {
+      "clip": 294,
+      "offset": 12091088,
+      "slot_size": 72560,
+      "file": "wav/clip_294.wav",
+      "wav_size": 72550,
+      "metadata": "maint011.wav",
+      "translation": "Zelador, conserte a Máquina de Diagnóstico!"
+    },
+    {
+      "clip": 295,
+      "offset": 12163648,
+      "slot_size": 68128,
+      "file": "wav/clip_295.wav",
+      "wav_size": 68118,
+      "metadata": "maint012.wav",
+      "translation": "Manutenção necessária na Sala de Descontaminação!"
+    },
+    {
+      "clip": 296,
+      "offset": 12231776,
+      "slot_size": 69280,
+      "file": "wav/clip_296.wav",
+      "wav_size": 69270,
+      "metadata": "maint013.wav",
+      "translation": "Zelador, compareça na sala do Inflador!"
+    },
+    {
+      "clip": 297,
+      "offset": 12301056,
+      "slot_size": 60512,
+      "file": "wav/clip_297.wav",
+      "wav_size": 60502,
+      "metadata": "maint014.wav",
+      "translation": "Manutenção necessária na Máquina de Fraturas!"
+    },
+    {
+      "clip": 298,
+      "offset": 12361568,
+      "slot_size": 46944,
+      "file": "wav/clip_298.wav",
+      "wav_size": 46934,
+      "metadata": "maint015.wav",
+      "translation": "Zelador chamado para a máquina de Transfusão!"
+    },
+    {
+      "clip": 299,
+      "offset": 12408512,
+      "slot_size": 56928,
+      "file": "wav/clip_299.wav",
+      "wav_size": 56918,
+      "metadata": "maint016.wav",
+      "translation": "Zelador, compareça ao Ultra Scanner!"
+    },
+    {
+      "clip": 300,
+      "offset": 12465440,
+      "slot_size": 47392,
+      "file": "wav/clip_300.wav",
+      "wav_size": 47380,
+      "metadata": "epid001.wav",
+      "translation": "Alerta de epidemia! Equipe a postos!"
+    },
+    {
+      "clip": 312,
+      "offset": 13010656,
+      "slot_size": 69280,
+      "file": "wav/clip_312.wav",
+      "wav_size": 69268,
+      "metadata": "vip001.wav",
+      "translation": "Atenção! Temos um VIP no hospital!"
+    },
+    {
+      "clip": 313,
+      "offset": 13079936,
+      "slot_size": 59488,
+      "file": "wav/clip_313.wav",
+      "wav_size": 59476,
+      "metadata": "vip002.wav",
+      "translation": "Um VIP acaba de entrar no hospital!"
+    },
+    {
+      "clip": 314,
+      "offset": 13139424,
+      "slot_size": 56608,
+      "file": "wav/clip_314.wav",
+      "wav_size": 56596,
+      "metadata": "vip003.wav",
+      "translation": "Temos um VIP em visita ao hospital!"
+    },
+    {
+      "clip": 315,
+      "offset": 13196032,
+      "slot_size": 56160,
+      "file": "wav/clip_315.wav",
+      "wav_size": 56148,
+      "metadata": "vip004.wav",
+      "translation": "Um VIP está fazendo um tour pelo hospital!"
+    },
+    {
+      "clip": 316,
+      "offset": 13252192,
+      "slot_size": 45344,
+      "file": "wav/clip_316.wav",
+      "wav_size": 45332,
+      "metadata": "vip005.wav",
+      "translation": "Temos um VIP entre nós!"
+    },
+    {
+      "clip": 317,
+      "offset": 13297536,
+      "slot_size": 55248,
+      "file": "wav/clip_317.wav",
+      "wav_size": 55238,
+      "metadata": "vip008.wav",
+      "translation": "Um representante do Ministério está no hospital!"
+    },
+    {
+      "clip": 318,
+      "offset": 13352784,
+      "slot_size": 39200,
+      "file": "wav/clip_318.wav",
+      "wav_size": 39188,
+      "metadata": "sack002.wav",
+      "translation": "Um médico foi pra casa mais cedo!"
+    },
+    {
+      "clip": 319,
+      "offset": 13391984,
+      "slot_size": 31008,
+      "file": "wav/clip_319.wav",
+      "wav_size": 30996,
+      "metadata": "sack001.wav",
+      "translation": "Médico dispensado!"
+    },
+    {
+      "clip": 320,
+      "offset": 13422992,
+      "slot_size": 34912,
+      "file": "wav/clip_320.wav",
+      "wav_size": 34900,
+      "metadata": "sack003.wav",
+      "translation": "Médico no olho da rua!"
+    },
+    {
+      "clip": 321,
+      "offset": 13457904,
+      "slot_size": 33824,
+      "file": "wav/clip_321.wav",
+      "wav_size": 33812,
+      "metadata": "sack004.wav",
+      "translation": "Uma enfermeira está desempregada!"
+    },
+    {
+      "clip": 329,
+      "offset": 13824912,
+      "slot_size": 47072,
+      "file": "wav/clip_329.wav",
+      "wav_size": 47062,
+      "metadata": "alien002.wav",
+      "translation": "Os alienígenas pousaram! Socorro!"
+    },
+    {
+      "clip": 330,
+      "offset": 13871984,
+      "slot_size": 82080,
+      "file": "wav/clip_330.wav",
+      "wav_size": 82070,
+      "metadata": "alien003.wav",
+      "translation": "É verdade! Existem alienígenas e eles estão dentro do hospital!"
+    },
+    {
+      "clip": 331,
+      "offset": 13954064,
+      "slot_size": 75072,
+      "file": "wav/clip_331.wav",
+      "wav_size": 75070,
+      "metadata": "alien004.wav",
+      "translation": "Pedimos aos alienígenas que não tumultuem demais o hospital!"
+    },
+    {
+      "clip": 332,
+      "offset": 14029136,
+      "slot_size": 54496,
+      "file": "wav/clip_332.wav",
+      "wav_size": 54486,
+      "metadata": "alien005.wav",
+      "translation": "Alienígenas, por favor, assinem o livro de visitantes!"
+    },
+    {
+      "clip": 333,
+      "offset": 14083632,
+      "slot_size": 43808,
+      "file": "wav/clip_333.wav",
+      "wav_size": 43798,
+      "metadata": "sorry001.wav",
+      "translation": "Pedimos desculpas pela quantidade de lixo espalhado!"
+    },
+    {
+      "clip": 334,
+      "offset": 14127440,
+      "slot_size": 48928,
+      "file": "wav/clip_334.wav",
+      "wav_size": 48918,
+      "metadata": "sorry002.wav",
+      "translation": "Pedimos desculpas pelo frio extremo!"
+    },
+    {
+      "clip": 335,
+      "offset": 14176368,
+      "slot_size": 48800,
+      "file": "wav/clip_335.wav",
+      "wav_size": 48790,
+      "metadata": "sorry003.wav",
+      "translation": "Lamentamos o calor excessivo!"
+    },
+    {
+      "clip": 336,
+      "offset": 14225168,
+      "slot_size": 68832,
+      "file": "wav/clip_336.wav",
+      "wav_size": 68820,
+      "metadata": "sorry004.wav",
+      "translation": "Pedimos desculpas aos pacientes: os aquecedores estão com defeito!"
+    },
+    {
+      "clip": 337,
+      "offset": 14294000,
+      "slot_size": 54624,
+      "file": "wav/clip_337.wav",
+      "wav_size": 54614,
+      "metadata": "sorry005.wav",
+      "translation": "Atenção! Há vômito no chão! Cuidado onde pisam!"
+    },
+    {
+      "clip": 338,
+      "offset": 14348624,
+      "slot_size": 69792,
+      "file": "wav/clip_338.wav",
+      "wav_size": 69782,
+      "metadata": "sorry006.wav",
+      "translation": "Manutenção, alerta de vômito no corredor!"
+    }
+  ]
+}

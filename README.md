@@ -14,7 +14,7 @@ O trabalho envolve a identificação e transcrição das falas originais, a trad
 
 A proposta é preservar o humor, a personalidade e o estilo característico dos anúncios originais, adaptando as falas para que soem naturais em português brasileiro.
 
-Este é um projeto independente, desenvolvido por fãs e ainda em fase beta.
+Este é um projeto independente, desenvolvido por fãs e ainda em fase beta. A versão V7 mantém a interpretação sintetizada atual, sem simulação de alto-falante, chiado ou estática de sistema de som público. Esses efeitos e o aprimoramento da interpretação ficam planejados para versões futuras; não são uma escolha artística definitiva.
 
 ---
 
@@ -112,14 +112,16 @@ Os clips são identificados por seus números e pelos nomes de metadados origina
 
 Exemplos:
 
-| Clip | Metadado | Conteúdo |
-|---:|---|---|
-| 265 | `reqd001.wav` | Solicitação de médico para a sala de Cardiologia |
-| 266 | `reqd002.wav` | Solicitação para a sala do Scanner |
-| 267 | `reqd003.wav` | Solicitação para a Psiquiatria |
-| 268 | `reqd004.wav` | Solicitação para a Clínica de Fraturas |
-| 269 | `reqd005.wav` | Solicitação para a Clínica de Linguarudos |
-| 270 | `reqd014.wav` | Solicitação para o Inflador de Cabeças |
+| Clip | Metadado | Conteúdo | Amostra (MP3) |
+|---:|---|---|---|
+| 265 | `reqd001.wav` | Solicitação para o Eletrocardiograma | [Ouvir](samples/mp3/clip-265.mp3) |
+| 266 | `reqd002.wav` | Solicitação para a Sala do Scanner | [Ouvir](samples/mp3/clip-266.mp3) |
+| 267 | `reqd003.wav` | Solicitação para a Psiquiatria | [Ouvir](samples/mp3/clip-267.mp3) |
+| 268 | `reqd004.wav` | Solicitação para a Clínica de Fraturas | [Ouvir](samples/mp3/clip-268.mp3) |
+| 269 | `reqd005.wav` | Solicitação para a Clínica de Linguarudos | [Ouvir](samples/mp3/clip-269.mp3) |
+| 270 | `reqd014.wav` | Solicitação para o Inflador de Cabeças | [Ouvir](samples/mp3/clip-270.mp3) |
+
+*As amostras MP3 são apenas demonstrativas. Não devem ser copiadas para a pasta do jogo nem substituem os arquivos de áudio usados pelo jogo.*
 
 A correspondência entre o número do clip e o metadado é essencial para evitar que uma fala seja reproduzida no contexto errado.
 
@@ -223,25 +225,23 @@ A compatibilidade com outras versões do jogo, sistemas operacionais e versões 
 
 ---
 
-## Estrutura prevista do repositório
+## Estrutura do repositório
 
 ```text
 Theme-Hospital-PTBR/
 ├── README.md
-├── LICENSE
 ├── docs/
-│   ├── progresso.md
 │   ├── instalacao.md
-│   ├── reconstrução-dat.md
-│   └── catalogo-de-falas.md
+│   ├── RELATORIO_V7_VOLUME_PTBR.txt
+│   └── Auditoria_Volume_PTBR_V7.csv
 ├── translations/
-│   └── clips-231-376.csv
-├── audio/
-│   └── README.md
-├── tools/
-│   └── README.md
-└── releases/
-    └── README.md
+│   └── Indice_Audios_Theme_Hospital_0-5_com_traducao_V7.csv
+├── samples/
+│   └── mp3/                 # seis amostras demonstrativas
+├── releases/
+│   └── v7/                  # pacote de patch e notas da versão
+└── tools/
+    └── apply_patch.py       # aplicador incluído no pacote V7
 ```
 
 A estrutura poderá ser ampliada conforme o projeto evoluir.
@@ -256,7 +256,7 @@ A estrutura poderá ser ampliada conforme o projeto evoluir.
 - [ ] Incorporar novos clips ao arquivo DAT.
 - [ ] Verificar a correspondência entre cada clip e sua fala no jogo.
 - [ ] Testar os arquivos em diferentes situações de jogo.
-- [ ] Preparar um método de instalação e restauração dos arquivos originais.
+- [x] Preparar um método de instalação e restauração dos arquivos originais.
 - [ ] Documentar o processo de reconstrução do arquivo DAT.
 - [ ] Ampliar a compatibilidade com diferentes versões.
 - [ ] Publicar novas versões beta e, futuramente, uma versão estável.
@@ -299,7 +299,7 @@ O usuário deve possuir uma cópia legítima do jogo. O repositório deve priori
 
 - **Projeto:** Theme Hospital PT-BR.
 - **Jogo original:** Theme Hospital — Bullfrog Productions.
-- **Síntese de voz:** ElevenLabs.
+- **Síntese de voz:** ElevenLabs (voz da V7 sem efeitos de alto-falante/PA; aprimoramentos planejados para versões futuras).
 - **Ambiente de execução:** CorsixTH.
 - **Comunidade:** colaboradores de tradução, transcrição, síntese, edição de áudio, programação e testes.
 
