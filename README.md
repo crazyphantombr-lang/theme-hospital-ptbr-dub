@@ -2,9 +2,7 @@
 
 **Projeto independente de tradução e dublagem de Theme Hospital para português brasileiro.**
 
-![Status](https://img.shields.io/badge/status-beta-orange)
-![Idioma](https://img.shields.io/badge/idioma-Portugu%C3%AAs%20Brasileiro-green)
-![Plataforma](https://img.shields.io/badge/plataforma-PC-blue)
+![Status](https://img.shields.io/badge/status-beta-orange) ![Idioma](https://img.shields.io/badge/idioma-Portugu%C3%AAs%20Brasileiro-green) ![Plataforma](https://img.shields.io/badge/plataforma-PC-blue)
 
 ## Sobre o projeto
 
@@ -17,6 +15,18 @@ A proposta é preservar o humor, a personalidade e o estilo característico dos 
 Este é um projeto independente, desenvolvido por fãs e ainda em fase beta. A versão V7 mantém a interpretação sintetizada atual, sem simulação de alto-falante, chiado ou estática de sistema de som público. Esses efeitos e o aprimoramento da interpretação ficam planejados para versões futuras; não são uma escolha artística definitiva.
 
 ---
+
+## Download — versão beta V7
+
+A versão V7 disponibiliza o arquivo de áudio completo `SOUND-0_PTBR_V7.DAT`, com 45 clips em português brasileiro incorporados.
+
+- **[Baixar SOUND-0_PTBR_V7.DAT](releases/v7/SOUND-0_PTBR_V7.DAT)**
+- [Abrir a página do arquivo no GitHub](https://github.com/crazyphantombr-lang/theme-hospital-ptbr-dub/blob/main/releases/v7/SOUND-0_PTBR_V7.DAT)
+- [Download direto](https://raw.githubusercontent.com/crazyphantombr-lang/theme-hospital-ptbr-dub/main/releases/v7/SOUND-0_PTBR_V7.DAT)
+
+Consulte o [guia de instalação](docs/instalacao.md) antes de substituir qualquer arquivo. **Faça uma cópia de segurança do `SOUND-0.DAT` original.**
+
+A V7 substitui o pacote de áudio em inglês `SOUND-0.DAT`. Os outros pacotes de áudio do jogo não são alterados.
 
 ## Estado atual — versão beta
 
@@ -37,24 +47,13 @@ O projeto está em desenvolvimento. Esta versão documenta os procedimentos téc
 
 ### Catálogo de falas
 
-O intervalo de clips **231 a 376** foi catalogado com transcrições em inglês e traduções propostas para português brasileiro.
-
-O catálogo inclui:
-
-- Avisos de chegada de pacientes.
-- Solicitações de médicos, enfermeiros e funcionários.
-- Alertas de epidemias e terremotos.
-- Avisos de demissões e acontecimentos especiais.
-- Mensagens aleatórias e anúncios do hospital.
-- Mensagens humorísticas características do jogo.
+O intervalo de clips **231 a 376** foi catalogado com transcrições em inglês e traduções propostas para português brasileiro. O catálogo inclui avisos de chegada de pacientes, solicitações de médicos e funcionários, alertas de epidemias e terremotos, avisos de demissões, acontecimentos especiais e mensagens humorísticas.
 
 **Importante:** uma fala estar transcrita e traduzida não significa que já tenha sido sintetizada, processada ou incorporada ao jogo.
 
 ### Áudios já incorporados
 
-O pacote de trabalho V7 contém um primeiro conjunto de **45 clips traduzidos**, com ajustes de volume.
-
-Os clips incorporados são:
+A V7 contém **45 clips traduzidos**, com ajustes de volume:
 
 - 265–270
 - 280–288
@@ -68,8 +67,6 @@ A implementação ainda é parcial e não representa uma dublagem completa do jo
 
 ## Pacotes de áudio do jogo
 
-Durante a análise dos arquivos originais, identificamos seis pacotes de áudio:
-
 | Arquivo | Idioma |
 |---|---|
 | `SOUND-0.DAT` | Inglês |
@@ -79,38 +76,23 @@ Durante a análise dos arquivos originais, identificamos seis pacotes de áudio:
 | `SOUND-4.DAT` | Espanhol |
 | `SOUND-5.DAT` | Sueco |
 
-O pacote `SOUND-0.DAT` foi escolhido como base para o desenvolvimento da versão brasileira.
-
-Os demais pacotes podem servir como referências comparativas para a análise da organização dos áudios e das diferenças entre as versões linguísticas.
-
-Eles não são tratados como versões em português brasileiro.
-
----
+O pacote `SOUND-0.DAT` foi escolhido como base para o desenvolvimento da versão brasileira. Na instalação, a V7 deve ser usada no lugar desse arquivo, mantendo os demais pacotes intactos.
 
 ## Processo técnico de reconstrução do SOUND-0.DAT
 
-Uma das partes centrais do projeto é a substituição dos áudios originais sem comprometer a estrutura do arquivo de som utilizado pelo jogo.
-
-O arquivo `SOUND-0.DAT` não é simplesmente uma pasta compactada de arquivos WAV. Por isso, a substituição exige cuidados com a estrutura binária e com a localização dos dados de áudio.
+O arquivo `SOUND-0.DAT` contém blocos de áudio e referências internas; por isso, a substituição exige cuidados com a estrutura binária e com a localização dos dados.
 
 ### 1. Análise da estrutura original
 
-O arquivo original utilizado como referência possui:
+O arquivo de referência possui:
 
 - Tamanho: **16.634.862 bytes**.
-- Total identificado: **376 blocos de áudio RIFF/WAVE**.
-- Formato de áudio das falas analisadas: PCM.
-- Canais: mono.
-- Taxa de amostragem: 22.050 Hz.
-- Profundidade: 8 bits.
+- Total identificado: **376 blocos RIFF/WAVE**.
+- Formato das falas analisadas: PCM, mono, 22.050 Hz, 8 bits.
 
-Cada bloco de áudio possui cabeçalho e dados de áudio. O índice do projeto registra informações como número do clip, metadado, duração, tamanho e posição dentro do arquivo DAT.
+O índice registra número do clip, metadado, duração, tamanho e posição dentro do arquivo DAT.
 
 ### 2. Identificação dos clips
-
-Os clips são identificados por seus números e pelos nomes de metadados originais.
-
-Exemplos:
 
 | Clip | Metadado | Conteúdo | Amostra (MP3) |
 |---:|---|---|---|
@@ -121,192 +103,64 @@ Exemplos:
 | 269 | `reqd005.wav` | Solicitação para a Clínica de Linguarudos | [Ouvir](samples/mp3/clip-269.mp3) |
 | 270 | `reqd014.wav` | Solicitação para o Inflador de Cabeças | [Ouvir](samples/mp3/clip-270.mp3) |
 
-*As amostras MP3 são apenas demonstrativas. Não devem ser copiadas para a pasta do jogo nem substituem os arquivos de áudio usados pelo jogo.*
+*As amostras MP3 são apenas demonstrativas. Não devem ser copiadas para a pasta do jogo nem substituem o arquivo DAT.*
 
-A correspondência entre o número do clip e o metadado é essencial para evitar que uma fala seja reproduzida no contexto errado.
+### 3. Preparação e substituição dos áudios
 
-### 3. Preparação dos novos áudios
+As falas são sintetizadas em português brasileiro e processadas para o formato de referência PCM, mono, 22.050 Hz e 8 bits. A reconstrução procura preservar posições, offsets, cabeçalhos, estrutura, tamanho total e clips ainda não traduzidos.
 
-As falas traduzidas são sintetizadas em português brasileiro e processadas para atender às características técnicas dos arquivos originais.
+### 4. Ajuste de volume e verificação
 
-O formato de referência utilizado é:
+As novas falas passam por normalização individual, utilizando o nível RMS do áudio original correspondente como referência, e controle de pico. No pacote V7, o arquivo reconstruído manteve o tamanho de **16.634.862 bytes**, com os 376 blocos identificados. A verificação estrutural não substitui testes de reprodução dentro do jogo.
 
-- PCM.
-- Mono.
-- 22.050 Hz.
-- 8 bits.
+## Ferramentas e ambiente
 
-Também são realizados ajustes de duração e volume para adequar os novos áudios aos espaços disponíveis.
+- **Síntese:** ElevenLabs.
+- **Processamento:** ferramentas de conversão, edição, normalização e controle de pico.
+- **Ambiente:** Windows 10, Theme Hospital original para PC e CorsixTH v0.70.1 Windows x64.
 
-### 4. Substituição dos dados de áudio
-
-A reconstrução é feita diretamente sobre uma cópia do arquivo DAT original.
-
-O procedimento procura preservar:
-
-- A posição original dos blocos de áudio.
-- Os offsets registrados no arquivo.
-- Os cabeçalhos e a estrutura dos blocos.
-- O tamanho total do arquivo.
-- Os clips que ainda não foram traduzidos.
-
-Quando um novo áudio ocupa menos espaço que o original, o espaço restante é preenchido para preservar o tamanho reservado ao bloco.
-
-Dessa forma, evita-se deslocar os blocos seguintes e comprometer as referências internas do arquivo.
-
-### 5. Ajuste de volume
-
-As novas falas passam por normalização individual, utilizando o nível RMS do áudio original correspondente como referência.
-
-Também é aplicado controle de pico para evitar distorções e valores excessivos.
-
-O objetivo é reduzir diferenças perceptíveis de volume entre as falas originais e as sintetizadas.
-
-### 6. Verificação do arquivo reconstruído
-
-Após a substituição, são realizadas verificações estruturais, incluindo:
-
-- Comparação do tamanho do arquivo antes e depois.
-- Verificação da quantidade de blocos identificados.
-- Conferência dos clips substituídos.
-- Preservação dos dados dos clips não modificados.
-- Verificação dos parâmetros de áudio.
-
-No pacote V7, o arquivo reconstruído manteve o tamanho original de **16.634.862 bytes**, com os 376 blocos de áudio identificados.
-
-Essas verificações são estruturais e não substituem os testes de reprodução dentro do jogo.
-
----
-
-## Ferramentas utilizadas
-
-### ElevenLabs
-
-Utilizado para sintetizar as falas em português brasileiro a partir dos textos traduzidos.
-
-A síntese de voz permite produzir os novos áudios sem a necessidade de gravar individualmente todas as falas com atores humanos.
-
-As falas são preparadas considerando o estilo dos anúncios originais, buscando preservar clareza, ritmo e personalidade.
-
-### Ferramentas de processamento de áudio
-
-Utilizadas para:
-
-- Conversão para o formato exigido pelo jogo.
-- Ajustes de duração.
-- Normalização de volume.
-- Controle de pico.
-- Preparação dos arquivos WAV para incorporação ao DAT.
-
-### CorsixTH
-
-O CorsixTH é utilizado como ambiente de execução para verificar o funcionamento do jogo com os arquivos modificados.
-
-Versão utilizada durante o desenvolvimento:
-
-`CorsixTH v0.70.1 — Windows x64`
-
----
-
-## Ambiente de desenvolvimento
-
-Ambiente utilizado como referência:
-
-| Componente | Versão ou configuração |
-|---|---|
-| Sistema operacional | Windows 10 |
-| Jogo | Theme Hospital original para PC |
-| Ferramenta | CorsixTH v0.70.1 |
-| Arquitetura | Windows x64 |
-| Pacote de áudio de referência | SOUND-0 (inglês) |
-| Idioma do projeto | Português brasileiro |
-
-A compatibilidade com outras versões do jogo, sistemas operacionais e versões do CorsixTH ainda precisa ser verificada.
-
----
+A compatibilidade com outras versões ainda precisa ser verificada.
 
 ## Estrutura do repositório
 
 ```text
 Theme-Hospital-PTBR/
 ├── README.md
-├── docs/
-│   ├── instalacao.md
-│   ├── RELATORIO_V7_VOLUME_PTBR.txt
-│   └── Auditoria_Volume_PTBR_V7.csv
+├── docs/instalacao.md
 ├── translations/
-│   └── Indice_Audios_Theme_Hospital_0-5_com_traducao_V7.csv
-├── samples/
-│   └── mp3/                 # seis amostras demonstrativas
-├── releases/
-│   └── v7/                  # pacote de patch e notas da versão
-└── tools/
-    └── apply_patch.py       # aplicador incluído no pacote V7
+├── samples/mp3/
+└── releases/
+    ├── README.md
+    └── v7/
+        ├── README.md
+        └── SOUND-0_PTBR_V7.DAT
 ```
-
-A estrutura poderá ser ampliada conforme o projeto evoluir.
-
----
 
 ## Próximas etapas
 
-- [ ] Revisar as traduções e padronizar a terminologia.
+- [ ] Revisar traduções e padronizar a terminologia.
 - [ ] Completar a síntese das falas ainda não dubladas.
-- [ ] Processar os novos áudios para o formato original.
 - [ ] Incorporar novos clips ao arquivo DAT.
-- [ ] Verificar a correspondência entre cada clip e sua fala no jogo.
-- [ ] Testar os arquivos em diferentes situações de jogo.
-- [x] Preparar um método de instalação e restauração dos arquivos originais.
-- [ ] Documentar o processo de reconstrução do arquivo DAT.
-- [ ] Ampliar a compatibilidade com diferentes versões.
-- [ ] Publicar novas versões beta e, futuramente, uma versão estável.
-
----
+- [ ] Testar os arquivos em diferentes situações e configurações.
+- [x] Disponibilizar um arquivo DAT V7 pronto para instalação.
+- [x] Documentar backup e restauração.
+- [ ] Aprimorar interpretação e explorar efeitos de alto-falante/PA em versões futuras.
 
 ## Como contribuir
 
-Contribuições são bem-vindas!
-
-Você pode ajudar com:
-
-- Revisão de traduções.
-- Sugestões de adaptação cultural e humor.
-- Identificação e transcrição de falas.
-- Revisão de pronúncia e interpretação das vozes sintetizadas.
-- Processamento e edição de áudio.
-- Testes de compatibilidade.
-- Documentação e ferramentas.
-
-Ao contribuir, procure preservar o número original do clip e seu metadado. Isso ajuda a evitar que uma fala seja associada ao áudio errado.
-
----
+Contribuições são bem-vindas: revisão de traduções, sugestões de adaptação cultural e humor, identificação e transcrição de falas, revisão de pronúncia, processamento de áudio, testes de compatibilidade e documentação. Preserve o número original do clip e seu metadado.
 
 ## Aviso legal
 
-Theme Hospital é propriedade de seus respectivos titulares de direitos autorais.
-
-Este é um projeto independente, sem vínculo oficial, patrocínio ou aprovação da Bullfrog Productions, Electronic Arts ou CorsixTH.
-
-O projeto é desenvolvido por fãs, com o objetivo de produzir uma tradução e dublagem não oficial para português brasileiro.
-
-**Não distribuímos o jogo original nem seus arquivos proprietários.**
-
-O usuário deve possuir uma cópia legítima do jogo. O repositório deve priorizar documentação, traduções, índices, ferramentas e patches que possam ser aplicados a uma cópia original, respeitando os direitos dos titulares.
-
----
+Theme Hospital é propriedade de seus respectivos titulares. Este é um projeto independente, sem vínculo oficial, patrocínio ou aprovação da Bullfrog Productions, Electronic Arts ou CorsixTH. O usuário deve possuir uma cópia legítima do jogo. Os direitos sobre o jogo e seus arquivos originais permanecem com seus respectivos titulares.
 
 ## Créditos
 
 - **Projeto:** Theme Hospital PT-BR.
 - **Jogo original:** Theme Hospital — Bullfrog Productions.
-- **Síntese de voz:** ElevenLabs (voz da V7 sem efeitos de alto-falante/PA; aprimoramentos planejados para versões futuras).
+- **Síntese de voz:** ElevenLabs.
 - **Ambiente de execução:** CorsixTH.
-- **Comunidade:** colaboradores de tradução, transcrição, síntese, edição de áudio, programação e testes.
 
----
-
-**Versão:** Beta  
+**Versão:** Beta V7  
 **Status:** Em desenvolvimento  
 **Idioma-alvo:** Português brasileiro (PT-BR)
-
-*Este README será atualizado conforme novas etapas da tradução e dublagem forem concluídas.*

@@ -1,3 +1,7 @@
 # Releases
 
-Os pacotes de versão são organizados por release. Consulte `v7/RELEASE_NOTES.md` para o conteúdo e as limitações da beta V7.
+As versões beta ficam organizadas nesta pasta.
+
+- [Beta V7](v7/README.md) — primeira versão com o arquivo `SOUND-0.DAT` PT-BR pronto para instalação.
+
+Cada versão mantém suas próprias notas, limitações e instruções.
